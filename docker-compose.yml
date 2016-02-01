@@ -1,0 +1,8 @@
+gitspeaker:
+  extends:
+    file: ./server/nginx.yml
+    service: gitspeaker
+infoworld:
+  extends:
+    file: ./server/apache.yml
+    service: infoworld
