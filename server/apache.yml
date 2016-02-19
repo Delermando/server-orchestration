@@ -1,0 +1,5 @@
+infoworld:
+  image: tutum/apache-php
+  container_name: apache
+  ports:
+    - "8001:80"
