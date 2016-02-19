@@ -1,0 +1,5 @@
+gitspeaker:
+  image: nginx:1.9.7
+  container_name: nginx
+  ports:
+    - "8002:80"
