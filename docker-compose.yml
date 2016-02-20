@@ -10,3 +10,7 @@ haproxy:
   extends:
     file: ./server/haproxy/docker.yml
     service: haproxy
+node:
+  extends:
+    file: ./server/node/docker.yml
+    service: node
