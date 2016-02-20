@@ -6,6 +6,7 @@ haproxy:
   expose:
     - "8001"
     - "8002"
+    - "8003"
   volumes:
     - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
     - ./entrypoint.sh:/usr/local/bin/entrypoint.sh
