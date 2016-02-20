@@ -1,0 +1,9 @@
+node:
+  image: node:5.6.0
+  container_name: node
+  ports:
+    - "8003:80"
+  volumes:
+    - ./app/:/usr/src/app/
+    - ./entrypoint.sh:/usr/local/bin/entrypoint.sh
+  entrypoint: /usr/local/bin/entrypoint.sh
