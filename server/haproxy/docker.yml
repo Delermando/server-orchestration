@@ -1,0 +1,12 @@
+haproxy:
+  image: haproxy
+  container_name: haproxy
+  ports:
+    - "80:80"
+  expose:
+    - "8001"
+    - "8002"
+  volumes:
+    - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
+    - ./entrypoint.sh:/usr/local/bin/entrypoint.sh
+  entrypoint: /usr/local/bin/entrypoint.sh
