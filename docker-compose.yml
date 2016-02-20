@@ -1,8 +1,12 @@
 gitspeaker:
   extends:
-    file: ./server/nginx.yml
+    file: ./server/nginx/docker.yml
     service: gitspeaker
 infoworld:
   extends:
-    file: ./server/apache.yml
+    file: ./server/apache/docker.yml
     service: infoworld
+haproxy:
+  extends:
+    file: ./server/haproxy/docker.yml
+    service: haproxy
